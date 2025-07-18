@@ -12,7 +12,7 @@ type ReducerAction = {
     type: REDUCER_ACTION_TYPE,
     payload?: string,
 }
-
+//   usereduce(intitalState,reducer) = [state,dispactc h]
 const reducer = (state: typeof initState, action: ReducerAction): typeof initState => {
     switch (action.type) {
         case REDUCER_ACTION_TYPE.INCREMENT:

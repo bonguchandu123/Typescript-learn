@@ -10,7 +10,7 @@ const initApp = (): void => {
   // Add listener to new entry form submit
   const itemEntryForm = document.getElementById("itemEntryForm") as HTMLFormElement
 
-  itemEntryForm.addEventListener("submit", (event: SubmitEvent): void => {
+  itemEntryForm.addEventListener("submit", (event:SubmitEvent): void => {
     event.preventDefault()
 
     // Get the new item value

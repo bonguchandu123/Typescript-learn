@@ -1,4 +1,6 @@
-import { ReactNode } from 'react'
+// import { ReactNode } from 'react'
+
+import { ReactNode } from "react";
 
 interface ListProps<T> {
     items: T[],
@@ -17,3 +19,6 @@ const List = <T,>({ items, render }: ListProps<T>) => {
     )
 }
 export default List
+
+
+

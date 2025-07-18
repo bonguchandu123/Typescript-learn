@@ -5,7 +5,7 @@
 // }
 
 interface TransactionObj {
-    readonly [index: string]: number
+    readonly [index:string]:number   // index signature   
     Pizza: number,
     Books: number,
     Job: number
@@ -15,10 +15,12 @@ const todaysTransactions: TransactionObj = {
     Pizza: -10,
     Books: -5,
     Job: 50,
+    
 }
 
 console.log(todaysTransactions.Pizza)
 console.log(todaysTransactions['Pizza'])
+
 
 let prop: string = 'Pizza'
 console.log(todaysTransactions[prop])
@@ -32,15 +34,14 @@ const todaysNet = (transactions: TransactionObj): number => {
 }
 
 console.log(todaysNet(todaysTransactions))
-
-//todaysTransactions.Pizza = 40
+// todaysTransactions.Pizza = 40
 
 console.log(todaysTransactions['Dave']) // undefined
 
 ///////////////////////////////////
 
 interface Student {
-    //[key: string]: string | number | number[] | undefined
+    // [key: string]: string | number | number[] | undefined
     name: string,
     GPA: number,
     classes?: number[]
@@ -49,7 +50,9 @@ interface Student {
 const student: Student = {
     name: "Doug",
     GPA: 3.5,
-    classes: [100, 200]
+    classes: [100, 200],
+    
+    
 }
 
 // console.log(student.test)

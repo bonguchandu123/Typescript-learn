@@ -26,7 +26,7 @@ const logMsg = (message: any): void => {
     console.log(message)
 }
 
-logMsg('Hello!')
+logMsg('Hello')
 logMsg(add(2, 3))
 
 let subtract = function (c: number, d: number): number {
@@ -53,7 +53,7 @@ const addAll = (a: number, b: number, c?: number): number => {
 }
 
 // default param value
-const sumAll = (a: number = 10, b: number, c: number = 2): number => {
+const sumAll = (a: number = 2, b: number, c: number = 2): number => {
     return a + b + c
 }
 
@@ -67,9 +67,9 @@ const total = (a: number, ...nums: number[]): number => {
     return a + nums.reduce((prev, curr) => prev + curr)
 }
 
-logMsg(total(10, 2, 3))
+logMsg(total(10, 2, 3)) // we are not sending [1,2,3] since we used ...nums hence we sended as ...nums
 
-const createError = (errMsg: string): never => {
+const createError = (errMsg: string):never => {
     throw new Error(errMsg)
 }
 
